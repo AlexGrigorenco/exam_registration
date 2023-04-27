@@ -37,7 +37,9 @@ input, select {
     border: none;
     outline: none;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: #fff;
     font-family: 'TildaSans', 'Arial';
