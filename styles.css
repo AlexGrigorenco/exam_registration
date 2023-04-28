@@ -247,12 +247,6 @@ h2{
     color: #263372;
     transition: .2s linear;
 }
-.registration form button:disabled{
-    cursor: default;
-    background: #263372;
-    color: #fff;
-    opacity: .8;
-}
 .registration form .success-submit{
     padding: 40px;
     text-align: center;

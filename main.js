@@ -62,7 +62,7 @@ form.onsubmit = (event) => {
 
     inputs.forEach(input => {
         if(input.value.trim() === ''){
-            !input.parentElement.querySelector('span') ? createError('span', 'error-message', 'Пожалуйста, заполните все обязательные поля', input.parentElement) : input.parentElement.querySelector('span').innerText = 'Пожалуйста, заполните все обязательные поля'
+            !input.parentElement.querySelector('span') ? setErrorMessage('span', 'error-message', 'Пожалуйста, заполните все обязательные поля', input.parentElement) : input.parentElement.querySelector('span').innerText = 'Пожалуйста, заполните все обязательные поля'
             input.parentElement.classList.add('error')
         }else{
             removeErrorMessage(input.parentElement)
