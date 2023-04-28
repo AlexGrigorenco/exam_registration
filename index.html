@@ -13,7 +13,7 @@
 
         <h1>Экзамен ТРКИ</h1>
 
-        <a href="#registration-form">Записаться</a>
+        <a href="#registration">Записаться</a>
         
     </header>
 
@@ -66,31 +66,43 @@
         <div class="image-wrapper">
             <img src="./images/registration-image.jpg" alt="subscribe">
         </div>
-        <div id="registration-form" class="form-wrapper">
+        <div id="registration" class="form-wrapper">
             <div class="form-title">
                 Запишитесь на экзамен прямо сейчас!
             </div>
 
-            <form  id="" name="" role="form" action="#" method="POST">
+            <form  id="registration-form" name="" role="form" action="">
                 <div class="input-wrapper">
                     <input type="text" autocomplete="name" name="name" id="" value="" placeholder="Ваше имя">
                 </div>
                 <div class="input-wrapper">
-                    <input type="tel" autocomplete="tel" name="phone" id="" value="" placeholder="Ваш телефон">
+                    <input type="tel" autocomplete="tel" name="phone" id="" value="" placeholder="Ваш телефон" data-phone>
+                    
                 </div>
                 <div class="input-wrapper">
-                    <input type="text" autocomplete="email" name="email" id="" value="" placeholder="Ваш email">
+                    <input type="text" autocomplete="email" name="email" id="" value="" placeholder="Ваш email" data-email>
                 </div>
                 <div class="input-wrapper">
                     <select name="exam" id="">
-                        <option value="">Выберите вид экзамена:</option>
+                        <option value="none">Выберите вид экзамена:</option>
                         <option value="РВП" >РВП</option>
                         <option value="ВНЖ" >ВНЖ</option>
                         <option value="Патент" >Патент</option>
                         <option value="Гражданство" >Гражданство</option>
                     </select>
                 </div>
-                <div>
+                <div class="error-alerts">
+                    <!-- <p>
+                        Пожалуйста, заполните все обязательные поля
+                    </p>
+                    <p>
+                        Укажите, пожалуйста, корректный email
+                    </p>
+                    <p>
+                        Укажите, пожалуйста, корректный номер телефона
+                    </p> -->
+                </div>
+                <div class="button-wrapper">
                     <button type="submit">Отправить заявку</button>
                 </div>                
             </form>

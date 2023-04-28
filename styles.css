@@ -183,7 +183,32 @@ h2{
     gap: 30px;
 }
 .registration form .input-wrapper{
+    position: relative;
+    padding: 0 10px;
     border-bottom: 1px solid #000;
+}
+.registration form .input-wrapper .error-message{
+    position: absolute;
+    color: red;
+    font-size: 14px;
+    left: 0;
+    bottom: -16px;
+    display: none;
+}
+.registration form .input-wrapper.error{
+    border: 1px solid red;
+}
+.registration form .input-wrapper.error .error-message{
+    display: block;
+}
+.registration form .error-alerts p{
+    color: #fff;
+    background: #F95D51;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
 }
 .registration form input,
 .registration form select{
@@ -204,6 +229,9 @@ h2{
     cursor: pointer;
     font-size: 20px;
 }
+.registration form .button-wrapper{
+    padding: 0 10px;
+}
 .registration form button{
     border: 2px solid #263372;
     background: #263372;
@@ -219,8 +247,21 @@ h2{
     color: #263372;
     transition: .2s linear;
 }
+.registration form button:disabled{
+    cursor: default;
+    background: #263372;
+    color: #fff;
+    opacity: .8;
+}
+.registration form .success-submit{
+    padding: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
 
 .registration .privacy-policy{
+    padding: 0 10px;
     font-size: 15px;
     font-weight: 400;
 }
